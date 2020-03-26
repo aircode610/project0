@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8">
+
+    <title>BaziMazi</title>
+    <link id="title_icon" rel="shortcut icon" href="Images\bazimazi-icon-2.png"/>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand mr-1 mr-sm-3" href="logged-in.html">
+        <img src="Images/bazimazi-icon-2.png" width="50" height="50" class="d-inline-block align-top" alt="">
+      </a>
+      <div class="m-0">
+        <form class="form-inline">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <button class="btn input-btn" type="button"><img src="Images/search.png" width="18px"></button>
+            </div>
+            <input type="text" class="form-control input-boxes" placeholder="Search..." aria-label="Searh" aria-describedby="basic-addon1">
+          </div>
+        </form>
+      </div>
+      <div class="dropdown  ml-auto mr-1">
+        <button class="btn profile-btn p-0 p-2" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <img src="Images/profile-icon.png" width="30" height="30" alt="">
+        </button>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">My Ads</a>
+          <a class="dropdown-item" href="#">My Chat</a>
+          <a class="dropdown-item" href="#">Sign out</a>
+        </div>
+      </div>
+    </nav>
+
+    <nav class="col-5 col-sm-5 col-md-4 col-lg-3 col-xl-2" style="padding:0px;padding-top:0px;">
+      <ul class="nav flex-column vertical-navbar">
+        <span class="p-2 mt-3 ml-2" id="category">Categories:</span>
+        <div class="px-2">
+          <li class="nav-item">
+            <a class="categories" data-toggle="collapse" href="#PS4" role="button" aria-expanded="false" aria-controls="collapseExample">
+              PS4
+            </a>
+          </li>
+          <div class="collapse" id="PS4">
+            <div class="card-body p-2">
+              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
+                All
+              </a>
+              <br>
+              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Action
+              </a>
+              <br>
+              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Adventure
+              </a>
+              <br>
+              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Role-playing
+              </a>
+              <br>
+              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Simulation
+              </a>
+              <br>
+              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Strategy
+              </a>
+              <br>
+              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Sports
+              </a>
+              <br>
+              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Puzzle
+              </a>
+              <br>
+              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Idle
+              </a>
+            </div>
+          </div>
+          <li class="nav-item mt-3">
+            <a class="categories" data-toggle="collapse" href="#PS3" role="button" aria-expanded="false" aria-controls="collapseExample">
+              PS3
+            </a>
+          </li>
+          <div class="collapse" id="PS3">
+            <div class="card-body p-2">
+              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
+                All
+              </a>
+              <br>
+              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Action
+              </a>
+              <br>
+              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Adventure
+              </a>
+              <br>
+              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Role-playing
+              </a>
+              <br>
+              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Simulation
+              </a>
+              <br>
+              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Strategy
+              </a>
+              <br>
+              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Sports
+              </a>
+              <br>
+              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Puzzle
+              </a>
+              <br>
+              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Idle
+              </a>
+            </div>
+          </div>
+          <li class="nav-item mt-3">
+            <a class="categories" data-toggle="collapse" href="#PS2" role="button" aria-expanded="false" aria-controls="collapseExample">
+              PS2
+            </a>
+          </li>
+          <div class="collapse" id="PS2">
+            <div class="card-body p-2">
+              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
+                All
+              </a>
+              <br>
+              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Action
+              </a>
+              <br>
+              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Adventure
+              </a>
+              <br>
+              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Role-playing
+              </a>
+              <br>
+              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Simulation
+              </a>
+              <br>
+              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Strategy
+              </a>
+              <br>
+              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Sports
+              </a>
+              <br>
+              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Puzzle
+              </a>
+              <br>
+              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Idle
+              </a>
+            </div>
+          </div>
+          <li class="nav-item mt-3">
+            <a class="categories" data-toggle="collapse" href="#Xbox-one" role="button" aria-expanded="false" aria-controls="collapseExample">
+              Xbox One
+            </a>
+          </li>
+          <div class="collapse" id="Xbox-one">
+            <div class="card-body p-2">
+              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
+                All
+              </a>
+              <br>
+              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Action
+              </a>
+              <br>
+              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Adventure
+              </a>
+              <br>
+              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Role-playing
+              </a>
+              <br>
+              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Simulation
+              </a>
+              <br>
+              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Strategy
+              </a>
+              <br>
+              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Sports
+              </a>
+              <br>
+              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Puzzle
+              </a>
+              <br>
+              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Idle
+              </a>
+            </div>
+          </div>
+          <li class="nav-item mt-3">
+            <a class="categories" data-toggle="collapse" href="#Xbox-360" role="button" aria-expanded="false" aria-controls="collapseExample">
+              Xbox 360
+            </a>
+          </li>
+          <div class="collapse" id="Xbox-360">
+            <div class="card-body p-2">
+              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
+                All
+              </a>
+              <br>
+              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Action
+              </a>
+              <br>
+              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Adventure
+              </a>
+              <br>
+              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Role-playing
+              </a>
+              <br>
+              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Simulation
+              </a>
+              <br>
+              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Strategy
+              </a>
+              <br>
+              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Sports
+              </a>
+              <br>
+              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Puzzle
+              </a>
+              <br>
+              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Idle
+              </a>
+            </div>
+          </div>
+          <li class="nav-item mt-3">
+            <a class="categories" data-toggle="collapse" href="#switch" role="button" aria-expanded="false" aria-controls="collapseExample">
+              Nintendo Switch
+            </a>
+          </li>
+          <div class="collapse" id="switch">
+            <div class="card-body p-2">
+              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
+                All
+              </a>
+              <br>
+              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Action
+              </a>
+              <br>
+              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Adventure
+              </a>
+              <br>
+              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Role-playing
+              </a>
+              <br>
+              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Simulation
+              </a>
+              <br>
+              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Strategy
+              </a>
+              <br>
+              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Sports
+              </a>
+              <br>
+              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Puzzle
+              </a>
+              <br>
+              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Idle
+              </a>
+            </div>
+          </div>
+          <li class="nav-item my-3">
+            <a class="categories" data-toggle="collapse" href="#wii" role="button" aria-expanded="false" aria-controls="collapseExample">
+              Nintendo Wii
+            </a>
+          </li>
+          <div class="collapse" id="wii">
+            <div class="card-body p-2">
+              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
+                All
+              </a>
+              <br>
+              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Action
+              </a>
+              <br>
+              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Adventure
+              </a>
+              <br>
+              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Role-playing
+              </a>
+              <br>
+              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Simulation
+              </a>
+              <br>
+              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Strategy
+              </a>
+              <br>
+              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Sports
+              </a>
+              <br>
+              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Puzzle
+              </a>
+              <br>
+              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Idle
+              </a>
+            </div>
+          </div>
+        </div>
+      </ul>
+    </nav>
+
+    <nav class="vertical-navbar nav flex-column col-5 col-sm-5 col-md-4 col-lg-3 col-xl-2" style="padding:0px;padding-top:2px;">
+      <a class="categories mb-3 mt-3" data-toggle="collapse" href="#price" role="button" aria-expanded="false" aria-controls="collapseExample">
+        Price:
+      </a>
+      <div class="collapse" id="price">
+        <div class="card-body">
+          <div class="input-group input-group-sm mb-3 mt-0" style="padding:10px;padding-bottom:0px;">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="inputGroup-sizing-sm">$</span>
+            </div>
+            <input type="text" class="form-control" placeholder="From : " aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+          </div>
+          <div class="input-group input-group-sm mb-3" style="padding:12px;padding-top:0px;">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="inputGroup-sizing-sm">$</span>
+            </div>
+            <input type="text" class="form-control" placeholder="To : " aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+          </div>
+        </div>
+      </div>
+      <a class="categories mb-3" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
+        Ad type:
+      </a>
+      <div class="collapse" id="type">
+        <div class="card-body">
+          <div class="form-group ">
+            <select id="adtype" class="form-control">
+              <option selected>Choose...</option>
+              <option>Sale</option>
+              <option>Exchange</option>
+              <option>Temporary exchange</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="form-check ml-3 mb-3">
+        <input type="checkbox" class="form-check-input pl-1" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1" style="color: #778794;">Image only</label>
+      </div>
+    </nav>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  </body>
+</html>
