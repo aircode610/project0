@@ -86,3 +86,10 @@
   text-decoration: none;
   color: #1a91da;
 }
+.profile-btn{
+  border: 1px solid #778794;
+  border-radius: 50%;
+}
+.profile-btn:hover{
+  background-color: #e6ecf0;
+}
