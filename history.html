@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="icon" href="Images/bazimazi-icon-3.png">
+
+    <title>BaziMazi</title>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-light navbar px-2">
+
+      <a class="navbar-brand text-blue mr-0" href="index.html">BaziMazi</a>
+      <form class="form-inline ml-3 mr-none d-none d-sm-none d-md-block mr-auto">
+        <div class="mr-3">
+          <button type="button" class="btn modal-btn pr-0" data-toggle="modal" data-target="#exampleModalLong">
+            New York
+            <img src="Images/dropdown.png" class="modal-btn-img ml-1 mr-2" width="20" height="20" alt="">
+          </button>
+        </div>
+      </form>
+      <form class="form-inline d-block d-sm-block d-md-none mr-auto ml-2">
+        <div class="ml-0">
+          <button type="button" class="btn modal-btn p-0 pl-2 ml-0" style="border:1px solid white;" data-toggle="modal" data-target="#exampleModalLong">
+            New York
+            <img src="Images/dropdown.png" class="modal-btn-img " width="20" height="20" alt="">
+          </button>
+        </div>
+      </form>
+      <div class="modal fade bd-example-modal-xl" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Choose your state</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body p-4 d-none d-sm-block">
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <button class="btn btn-search" type="button"><img src="Images/search.png" width="20" height="20" alt=""></button>
+                </div>
+                <input type="text" class="form-control search-box" placeholder="Search a state..." aria-label="" aria-describedby="basic-addon1">
+              </div>
+              <br>
+              <span class=" text-grey-dark">Most visited states:</span>
+              <div class="d-md-flex flex-wrap mt-3">
+                <button class="cities">California</button>
+                <button class="cities">New Jersey</button>
+                <button class="cities">Alaska</button>
+                <button class="cities">Massachusetts</button>
+                <button class="cities">New York</button>
+                <button class="cities">Texas</button>
+                <button class="cities">Indiana</button>
+              </div>
+              <br>
+              <span class="text-grey-dark">All the states:</span>
+              <div class="d-md-flex flex-wrap mt-3">
+                <button value="Alabama" class="cities">Alabama</button>
+                <button value="Alaska" class="cities">Alaska</button>
+                <button value="Arizona" class="cities">Arizona</button>
+                <button value="Arkansas" class="cities">Arkansas</button>
+                <button value="California" class="cities">California</button>
+                <button value="Colorado" class="cities">Colorado</button>
+                <button value="Connecticut" class="cities">Connecticut</button>
+                <button value="Delaware" class="cities">Delaware</button>
+                <button value="District of Columbia" class="cities">District of Columbia</button>
+                <button value="Florida" class="cities">Florida</button>
+                <button value="Georgia" class="cities">Georgia</button>
+                <button value="Hawaii" class="cities">Hawaii</button>
+                <button value="Idaho" class="cities">Idaho</button>
+                <button value="Illinois" class="cities">Illinois</button>
+                <button value="Indiana" class="cities">Indiana</button>
+                <button value="Iowa" class="cities">Iowa</button>
+                <button value="Kansas" class="cities">Kansas</button>
+                <button value="Kentucky" class="cities">Kentucky</button>
+                <button value="Louisiana" class="cities">Louisiana</button>
+                <button value="Maine" class="cities">Maine</button>
+                <button value="Maryland" class="cities">Maryland</button>
+                <button value="Massachusetts" class="cities">Massachusetts</button>
+                <button value="Michigan" class="cities">Michigan</button>
+                <button value="Minnesota" class="cities">Minnesota</button>
+                <button value="Mississippi" class="cities">Mississippi</button>
+                <button value="Missouri" class="cities">Missouri</button>
+                <button value="Montana" class="cities">Montana</button>
+                <button value="Nebraska" class="cities">Nebraska</button>
+                <button value="Nevada" class="cities">Nevada</button>
+                <button value="New Hampshire" class="cities">New Hampshire</button>
+                <button value="New Jersey" class="cities">New Jersey</button>
+                <button value="New Mexico" class="cities">New Mexico</button>
+                <button value="New York" class="cities">New York</button>
+                <button value="North Carolina" class="cities">North Carolina</button>
+                <button value="North Dakota" class="cities">North Dakota</button>
+                <button value="Ohio"class="cities">Ohio</button>
+                <button value="Oklahoma" class="cities">Oklahoma</button>
+                <button value="Oregon" class="cities">Oregon</button>
+                <button value="Pennsylvania" class="cities">Pennsylvania</button>
+                <button value="Rhode Island" class="cities">Rhode Island</button>
+                <button value="South Carolina" class="cities">South Carolina</button>
+                <button value="South Dakota" class="cities">South Dakota</button>
+                <button value="Tennessee" class="cities">Tennessee</button>
+                <button value="Texas" class="cities">Texas</button>
+                <button value="Utah" class="cities">Utah</button>
+                <button value="Vermont" class="cities">Vermont</button>
+                <button value="Virginia" class="cities">Virginia</button>
+                <button value="Washington" class="cities">Washington</button>
+                <button value="West Virginia" class="cities">West Virginia</button>
+                <button value="Wisconsin" class="cities">Wisconsin</button>
+                <button value="Wyoming" class="cities">Wyoming</button>
+              </div>
+            </div>
+            <div class="modal-body p-4 d-block d-sm-none">
+              <input type="text" name="example" class="form-control" list="cities">
+              <datalist id="cities">
+                <option value="Alabama"></option>
+                <option value="Alaska"></option>
+                <option value="Arizona"></option>
+                <option value="Arkansas"></option>
+                <option value="California"></option>
+                <option value="Colorado"></option>
+                <option value="Connecticut"></option>
+                <option value="Delaware"></option>
+                <option value="District of Columbia"></option>
+                <option value="Florida"></option>
+                <option value="Georgia"></option>
+                <option value="Hawaii"></option>
+                <option value="Idaho"></option>
+                <option value="Illinois"></option>
+                <option value="Indiana"></option>
+                <option value="Iowa"></option>
+                <option value="Kansas"></option>
+                <option value="Kentucky"></option>
+                <option value="Louisiana"></option>
+                <option value="Maine"></option>
+                <option value="Maryland"></option>
+                <option value="Massachusetts"></option>
+                <option value="Michigan"></option>
+                <option value="Minnesota"></option>
+                <option value="Mississippi"></option>
+                <option value="Missouri"></option>
+                <option value="Montana"></option>
+                <option value="Nebraska"></option>
+                <option value="Nevada"></option>
+                <option value="New Hampshire"></option>
+                <option value="New Jersey"></option>
+                <option value="New Mexico"></option>
+                <option value="New York"></option>
+                <option value="North Carolina"></option>
+                <option value="North Dakota"></option>
+                <option value="Ohio"></option>
+                <option value="Oklahoma"></option>
+                <option value="Oregon"></option>
+                <option value="Pennsylvania"></option>
+                <option value="Rhode Island"></option>
+                <option value="South Carolina"></option>
+                <option value="South Dakota"></option>
+                <option value="Tennessee"></option>
+                <option value="Texas"></option>
+                <option value="Utah"></option>
+                <option value="Vermont"></option>
+                <option value="Virginia"></option>
+                <option value="Washington"></option>
+                <option value="West Virginia"></option>
+                <option value="Wisconsin"></option>
+                <option value="Wyoming"></option>
+              </datalist>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item navbar-links" href="my-ads.html">My ads</a>
+          <a class="nav-item navbar-links" href="chat.html" target="_blank">Chat</a>
+        </div>
+      </div>
+
+      <form class="form-inline mr-1">
+        <a href="publish-ad.html"><button class="btn ad-btn px-2" type="button">Publish an ad</button></a>
+      </form>
+
+      <div class="dropdown d-block d-sm-block d-md-block d-lg-none">
+        <a class="btn btn-sm ml-0" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <span class="navbar-toggler-icon"></span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item" href="my-ads.html">My ads</a>
+          <a class="dropdown-item" href="chat.html" target="_blank">Chat</a>
+        </div>
+      </div>
+
+    </nav>
+
+    <div class="my-ads nav-my-ads mt-4">
+      <a href="my-ads.html" class="navbar-links-my-ads px-1 px-sm-3">My ads</a>
+      <a href="saved-ads.html" class="navbar-links-my-ads px-1 px-sm-3">Saved ads</a>
+      <a href="history.html" class="navbar-links-my-ads active-my-ads px-1 px-sm-3">History</a>
+    </div>
+    <div class="bottom-content mt-4 pl-2">
+      <span>You haven't seen any adds yet</span>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>

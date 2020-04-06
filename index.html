@@ -1,405 +1,452 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
+<!doctype html>
+<html lang="en">
   <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
     <link rel="stylesheet" href="style.css">
 
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-      <title>BaziMazi</title>
-      <link id="title_icon" rel="shortcut icon" href="Images\bazimazi-icon-2.png"/>
-    </head>
-    <body>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="index.html">
-          <img src="Images/bazimazi-icon-2.png" width="50" height="50" class="d-inline-block align-top" alt="">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <link rel="icon" href="Images/bazimazi-icon-3.png">
+
+    <title>BaziMazi</title>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-light top-nav px-2">
+
+      <a class="navbar-brand text-blue mr-0" href="index.html">BaziMazi</a>
+      <form class="form-inline ml-3 mr-none d-none d-sm-none d-md-block mr-auto">
+        <div class="mr-3">
+          <button type="button" class="btn modal-btn pr-0" data-toggle="modal" data-target="#exampleModalLong">
+            New York
+            <img src="Images/dropdown.png" class="modal-btn-img ml-1 mr-2" width="20" height="20" alt="">
+          </button>
+        </div>
+      </form>
+      <form class="form-inline d-block d-sm-block d-md-none mr-auto ml-2">
+        <div class="ml-0">
+          <button type="button" class="btn modal-btn p-0 pl-2 ml-0" style="border:1px solid white;" data-toggle="modal" data-target="#exampleModalLong">
+            New York
+            <img src="Images/dropdown.png" class="modal-btn-img " width="20" height="20" alt="">
+          </button>
+        </div>
+      </form>
+      <div class="modal fade bd-example-modal-xl" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Choose your state</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body p-4 d-none d-sm-block">
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <button class="btn btn-search" type="button"><img src="Images/search.png" width="20" height="20" alt=""></button>
+                </div>
+                <input type="text" class="form-control search-box" placeholder="Search a state..." aria-label="" aria-describedby="basic-addon1">
+              </div>
+              <br>
+              <span class=" text-grey-dark">Most visited states:</span>
+              <div class="d-md-flex flex-wrap mt-3">
+                <button class="cities">California</button>
+                <button class="cities">New Jersey</button>
+                <button class="cities">Alaska</button>
+                <button class="cities">Massachusetts</button>
+                <button class="cities">New York</button>
+                <button class="cities">Texas</button>
+                <button class="cities">Indiana</button>
+              </div>
+              <br>
+              <span class="text-grey-dark">All the states:</span>
+              <div class="d-md-flex flex-wrap mt-3">
+                <button value="Alabama" class="cities">Alabama</button>
+                <button value="Alaska" class="cities">Alaska</button>
+                <button value="Arizona" class="cities">Arizona</button>
+                <button value="Arkansas" class="cities">Arkansas</button>
+                <button value="California" class="cities">California</button>
+                <button value="Colorado" class="cities">Colorado</button>
+                <button value="Connecticut" class="cities">Connecticut</button>
+                <button value="Delaware" class="cities">Delaware</button>
+                <button value="District of Columbia" class="cities">District of Columbia</button>
+                <button value="Florida" class="cities">Florida</button>
+                <button value="Georgia" class="cities">Georgia</button>
+                <button value="Hawaii" class="cities">Hawaii</button>
+                <button value="Idaho" class="cities">Idaho</button>
+                <button value="Illinois" class="cities">Illinois</button>
+                <button value="Indiana" class="cities">Indiana</button>
+                <button value="Iowa" class="cities">Iowa</button>
+                <button value="Kansas" class="cities">Kansas</button>
+                <button value="Kentucky" class="cities">Kentucky</button>
+                <button value="Louisiana" class="cities">Louisiana</button>
+                <button value="Maine" class="cities">Maine</button>
+                <button value="Maryland" class="cities">Maryland</button>
+                <button value="Massachusetts" class="cities">Massachusetts</button>
+                <button value="Michigan" class="cities">Michigan</button>
+                <button value="Minnesota" class="cities">Minnesota</button>
+                <button value="Mississippi" class="cities">Mississippi</button>
+                <button value="Missouri" class="cities">Missouri</button>
+                <button value="Montana" class="cities">Montana</button>
+                <button value="Nebraska" class="cities">Nebraska</button>
+                <button value="Nevada" class="cities">Nevada</button>
+                <button value="New Hampshire" class="cities">New Hampshire</button>
+                <button value="New Jersey" class="cities">New Jersey</button>
+                <button value="New Mexico" class="cities">New Mexico</button>
+                <button value="New York" class="cities">New York</button>
+                <button value="North Carolina" class="cities">North Carolina</button>
+                <button value="North Dakota" class="cities">North Dakota</button>
+                <button value="Ohio"class="cities">Ohio</button>
+                <button value="Oklahoma" class="cities">Oklahoma</button>
+                <button value="Oregon" class="cities">Oregon</button>
+                <button value="Pennsylvania" class="cities">Pennsylvania</button>
+                <button value="Rhode Island" class="cities">Rhode Island</button>
+                <button value="South Carolina" class="cities">South Carolina</button>
+                <button value="South Dakota" class="cities">South Dakota</button>
+                <button value="Tennessee" class="cities">Tennessee</button>
+                <button value="Texas" class="cities">Texas</button>
+                <button value="Utah" class="cities">Utah</button>
+                <button value="Vermont" class="cities">Vermont</button>
+                <button value="Virginia" class="cities">Virginia</button>
+                <button value="Washington" class="cities">Washington</button>
+                <button value="West Virginia" class="cities">West Virginia</button>
+                <button value="Wisconsin" class="cities">Wisconsin</button>
+                <button value="Wyoming" class="cities">Wyoming</button>
+              </div>
+            </div>
+            <div class="modal-body p-4 d-block d-sm-none">
+              <input type="text" name="example" class="form-control" list="cities">
+              <datalist id="cities">
+                <option value="Alabama"></option>
+                <option value="Alaska"></option>
+                <option value="Arizona"></option>
+                <option value="Arkansas"></option>
+                <option value="California"></option>
+                <option value="Colorado"></option>
+                <option value="Connecticut"></option>
+                <option value="Delaware"></option>
+                <option value="District of Columbia"></option>
+                <option value="Florida"></option>
+                <option value="Georgia"></option>
+                <option value="Hawaii"></option>
+                <option value="Idaho"></option>
+                <option value="Illinois"></option>
+                <option value="Indiana"></option>
+                <option value="Iowa"></option>
+                <option value="Kansas"></option>
+                <option value="Kentucky"></option>
+                <option value="Louisiana"></option>
+                <option value="Maine"></option>
+                <option value="Maryland"></option>
+                <option value="Massachusetts"></option>
+                <option value="Michigan"></option>
+                <option value="Minnesota"></option>
+                <option value="Mississippi"></option>
+                <option value="Missouri"></option>
+                <option value="Montana"></option>
+                <option value="Nebraska"></option>
+                <option value="Nevada"></option>
+                <option value="New Hampshire"></option>
+                <option value="New Jersey"></option>
+                <option value="New Mexico"></option>
+                <option value="New York"></option>
+                <option value="North Carolina"></option>
+                <option value="North Dakota"></option>
+                <option value="Ohio"></option>
+                <option value="Oklahoma"></option>
+                <option value="Oregon"></option>
+                <option value="Pennsylvania"></option>
+                <option value="Rhode Island"></option>
+                <option value="South Carolina"></option>
+                <option value="South Dakota"></option>
+                <option value="Tennessee"></option>
+                <option value="Texas"></option>
+                <option value="Utah"></option>
+                <option value="Vermont"></option>
+                <option value="Virginia"></option>
+                <option value="Washington"></option>
+                <option value="West Virginia"></option>
+                <option value="Wisconsin"></option>
+                <option value="Wyoming"></option>
+              </datalist>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item navbar-links" href="my-ads.html">My ads</a>
+          <a class="nav-item navbar-links" href="chat.html" target="_blank">Chat</a>
+        </div>
+      </div>
+
+      <form class="form-inline mr-1">
+        <a href="publish-ad.html"><button class="btn ad-btn px-2" type="button">Publish an ad</button></a>
+      </form>
+
+      <div class="dropdown d-block d-sm-block d-md-block d-lg-none">
+        <a class="btn btn-sm ml-0" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <span class="navbar-toggler-icon"></span>
         </a>
-        <div class="">
-        <form class="form-inline">
-          <div class="input-group">
-            <div class="input-group-prepend">
-              <button class="btn input-btn" type="button"><img src="Images/search.png" width="18px"></button>
-            </div>
-            <input type="text" class="form-control input-boxes" placeholder="Search..." aria-label="Searh" aria-describedby="basic-addon1">
-          </div>
-        </form>
-      </div>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse float-right" id="navbarTogglerDemo02">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a href="register.html"><button class="btn btn-man-blue m-2" type="button">Sign up</button></a>
-          </li>
-          <li class="nav-item">
-            <a href="login.html"><button class="btn btn-man-white m-2" type="button">Log in</button></a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-
-    <nav class="col-5 col-sm-5 col-md-4 col-lg-3 col-xl-2" style="padding:0px;padding-top:0px;">
-      <ul class="nav flex-column vertical-navbar">
-        <span class="p-2 mt-3 ml-2" id="category">Categories:</span>
-        <div class="px-2">
-          <li class="nav-item">
-            <a class="categories" data-toggle="collapse" href="#PS4" role="button" aria-expanded="false" aria-controls="collapseExample">
-              PS4
-            </a>
-          </li>
-          <div class="collapse" id="PS4">
-            <div class="card-body p-2">
-              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
-                All
-              </a>
-              <br>
-              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
-                Action
-              </a>
-              <br>
-              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
-                Adventure
-              </a>
-              <br>
-              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
-                Role-playing
-              </a>
-              <br>
-              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
-                Simulation
-              </a>
-              <br>
-              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
-                Strategy
-              </a>
-              <br>
-              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
-                Sports
-              </a>
-              <br>
-              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
-                Puzzle
-              </a>
-              <br>
-              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
-                Idle
-              </a>
-            </div>
-          </div>
-          <li class="nav-item mt-3">
-            <a class="categories" data-toggle="collapse" href="#PS3" role="button" aria-expanded="false" aria-controls="collapseExample">
-              PS3
-            </a>
-          </li>
-          <div class="collapse" id="PS3">
-            <div class="card-body p-2">
-              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
-                All
-              </a>
-              <br>
-              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
-                Action
-              </a>
-              <br>
-              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
-                Adventure
-              </a>
-              <br>
-              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
-                Role-playing
-              </a>
-              <br>
-              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
-                Simulation
-              </a>
-              <br>
-              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
-                Strategy
-              </a>
-              <br>
-              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
-                Sports
-              </a>
-              <br>
-              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
-                Puzzle
-              </a>
-              <br>
-              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
-                Idle
-              </a>
-            </div>
-          </div>
-          <li class="nav-item mt-3">
-            <a class="categories" data-toggle="collapse" href="#PS2" role="button" aria-expanded="false" aria-controls="collapseExample">
-              PS2
-            </a>
-          </li>
-          <div class="collapse" id="PS2">
-            <div class="card-body p-2">
-              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
-                All
-              </a>
-              <br>
-              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
-                Action
-              </a>
-              <br>
-              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
-                Adventure
-              </a>
-              <br>
-              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
-                Role-playing
-              </a>
-              <br>
-              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
-                Simulation
-              </a>
-              <br>
-              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
-                Strategy
-              </a>
-              <br>
-              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
-                Sports
-              </a>
-              <br>
-              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
-                Puzzle
-              </a>
-              <br>
-              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
-                Idle
-              </a>
-            </div>
-          </div>
-          <li class="nav-item mt-3">
-            <a class="categories" data-toggle="collapse" href="#Xbox-one" role="button" aria-expanded="false" aria-controls="collapseExample">
-              Xbox One
-            </a>
-          </li>
-          <div class="collapse" id="Xbox-one">
-            <div class="card-body p-2">
-              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
-                All
-              </a>
-              <br>
-              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
-                Action
-              </a>
-              <br>
-              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
-                Adventure
-              </a>
-              <br>
-              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
-                Role-playing
-              </a>
-              <br>
-              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
-                Simulation
-              </a>
-              <br>
-              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
-                Strategy
-              </a>
-              <br>
-              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
-                Sports
-              </a>
-              <br>
-              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
-                Puzzle
-              </a>
-              <br>
-              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
-                Idle
-              </a>
-            </div>
-          </div>
-          <li class="nav-item mt-3">
-            <a class="categories" data-toggle="collapse" href="#Xbox-360" role="button" aria-expanded="false" aria-controls="collapseExample">
-              Xbox 360
-            </a>
-          </li>
-          <div class="collapse" id="Xbox-360">
-            <div class="card-body p-2">
-              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
-                All
-              </a>
-              <br>
-              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
-                Action
-              </a>
-              <br>
-              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
-                Adventure
-              </a>
-              <br>
-              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
-                Role-playing
-              </a>
-              <br>
-              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
-                Simulation
-              </a>
-              <br>
-              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
-                Strategy
-              </a>
-              <br>
-              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
-                Sports
-              </a>
-              <br>
-              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
-                Puzzle
-              </a>
-              <br>
-              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
-                Idle
-              </a>
-            </div>
-          </div>
-          <li class="nav-item mt-3">
-            <a class="categories" data-toggle="collapse" href="#switch" role="button" aria-expanded="false" aria-controls="collapseExample">
-              Nintendo Switch
-            </a>
-          </li>
-          <div class="collapse" id="switch">
-            <div class="card-body p-2">
-              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
-                All
-              </a>
-              <br>
-              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
-                Action
-              </a>
-              <br>
-              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
-                Adventure
-              </a>
-              <br>
-              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
-                Role-playing
-              </a>
-              <br>
-              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
-                Simulation
-              </a>
-              <br>
-              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
-                Strategy
-              </a>
-              <br>
-              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
-                Sports
-              </a>
-              <br>
-              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
-                Puzzle
-              </a>
-              <br>
-              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
-                Idle
-              </a>
-            </div>
-          </div>
-          <li class="nav-item my-3">
-            <a class="categories" data-toggle="collapse" href="#wii" role="button" aria-expanded="false" aria-controls="collapseExample">
-              Nintendo Wii
-            </a>
-          </li>
-          <div class="collapse" id="wii">
-            <div class="card-body p-2">
-              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
-                All
-              </a>
-              <br>
-              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
-                Action
-              </a>
-              <br>
-              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
-                Adventure
-              </a>
-              <br>
-              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
-                Role-playing
-              </a>
-              <br>
-              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
-                Simulation
-              </a>
-              <br>
-              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
-                Strategy
-              </a>
-              <br>
-              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
-                Sports
-              </a>
-              <br>
-              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
-                Puzzle
-              </a>
-              <br>
-              <a class="categories" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
-                Idle
-              </a>
-            </div>
-          </div>
-        </div>
-      </ul>
-    </nav>
-
-    <nav class="vertical-navbar nav flex-column col-5 col-sm-5 col-md-4 col-lg-3 col-xl-2" style="padding:0px;padding-top:2px;">
-      <a class="categories mb-3 mt-3" data-toggle="collapse" href="#price" role="button" aria-expanded="false" aria-controls="collapseExample">
-        Price:
-      </a>
-      <div class="collapse" id="price">
-        <div class="card-body">
-          <div class="input-group input-group-sm mb-3 mt-0" style="padding:10px;padding-bottom:0px;">
-            <div class="input-group-prepend">
-              <span class="input-group-text" id="inputGroup-sizing-sm">$</span>
-            </div>
-            <input type="text" class="form-control" placeholder="From : " aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-          </div>
-          <div class="input-group input-group-sm mb-3" style="padding:12px;padding-top:0px;">
-            <div class="input-group-prepend">
-              <span class="input-group-text" id="inputGroup-sizing-sm">$</span>
-            </div>
-            <input type="text" class="form-control" placeholder="To : " aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-          </div>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item" href="my-ads.html">My ads</a>
+          <a class="dropdown-item" href="chat.html" target="_blank">Chat</a>
         </div>
       </div>
-      <a class="categories mb-3" data-toggle="collapse" href="#type" role="button" aria-expanded="false" aria-controls="collapseExample">
-        Ad type:
-      </a>
-      <div class="collapse" id="type">
-        <div class="card-body">
-          <div class="form-group ">
-            <select id="adtype" class="form-control">
-              <option selected>Choose...</option>
-              <option>Sale</option>
-              <option>Exchange</option>
-              <option>Temporary exchange</option>
-            </select>
-          </div>
-        </div>
-      </div>
-      <div class="form-check ml-3 mb-3">
-        <input type="checkbox" class="form-check-input pl-1" id="exampleCheck1">
-        <label class="form-check-label" for="exampleCheck1" style="color: #778794;">Image only</label>
-      </div>
+
     </nav>
 
+    <div class="aside-nav container-fluid p-0">
+      <div class="row mx-0">
+        <div class="nav ml-2 col-xl-2 col-lg-3 col-md-3 col-sm-0 d-none d-sm-none d-md-block">
+          <aside class="nav d-sm-none d-md-inline-flex flex-column left-nav d-none">
+            <p class="category-text-title mt-3 mb-0">Categories</p>
+            <ul class="nav flex-column mt-1 mb-3">
+              <li class="nav-item">
+                <a class="nav-link category-text pl-2" href="#"><img src="Images/ps4.png" width="25" height="25" alt=""> PS4</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link category-text pl-2" href="#"><img src="Images/ps3.png" width="25" height="25" alt=""> PS3</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link category-text pl-2" href="#"><img src="Images/ps2.png" width="26" height="20" alt=""> PS2</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link category-text pl-2" href="#"><img src="Images/xbox-one.png" width="25" height="25" alt=""> Xbox One</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link category-text pl-2" href="#"><img src="Images/xbox-360.png" width="25" height="25" alt=""> Xbox 360</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link category-text pl-2" href="#"><img src="Images/switch.png" width="25" height="25" alt=""> Nintendo Switch</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link category-text pl-2" href="#"><img src="Images/wii.png" width="25" height="25" alt=""> Nintendo Wii</a>
+              </li>
+            </ul>
+          </aside>
+          <div class="py-2 px-0 left-nav d-none d-sm-none d-md-block">
+            <a class="filtering-btn" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+              <span class="mx-1">Price</span><img src="Images/dropdown.png" width="20" height="20" class="float-right mx-2 my-1">
+            </a>
+            <div class="collapse" id="collapseExample">
+              <div class="card-body pl-3 pt-2">
+                <form>
+                  <div class="form-row">
+                    <div class="col form-inline">
+                      <label for="from">From </label>
+                      <input type="text" id="from" name="example" class="form-control ml-auto" placeholder="Like $10" list="from-mon">
+                      <datalist id="from-mon">
+                        <option value="$1">
+                        <option value="$5">
+                        <option value="$10">
+                        <option value="$50">
+                        <option value="$100">
+                      </datalist>
+                    </div>
+                  </div>
+                  <div class="form-row mt-3">
+                    <div class="col form-inline">
+                      <label for="from">To </label>
+                      <input type="text" id="from" name="example" class="form-control ml-auto" placeholder="Like $10" list="to-mon">
+                      <datalist id="to-mon">
+                        <option value="$1">
+                        <option value="$5">
+                        <option value="$10">
+                        <option value="$50">
+                        <option value="$100">
+                      </datalist>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="custom-control custom-switch py-2 left-nav d-none d-sm-none d-md-block">
+            <input type="checkbox" class="custom-control-input" id="customSwitch1">
+            <label class="custom-control-label" for="customSwitch1">Image only</label>
+          </div>
+          <div class="custom-control custom-switch py-2 left-nav d-none d-sm-none d-md-block">
+            <input type="checkbox" class="custom-control-input" id="customSwitch">
+            <label class="custom-control-label" for="customSwitch">Instants only</label>
+          </div>
+        </div>
+        <div class="col-xl-9 col-lg-8 col-md-8 col-sm-11 ml-md-5 ml-sm-4 ml-4 mr-0 p-0">
+          <div class="input-group mt-4 mr-0 main-search">
+            <div class="input-group-prepend">
+              <button class="btn btn-search" type="button"><img src="Images/search.png" width="20" height="20" alt=""></button>
+            </div>
+            <input type="text" class="form-control search-box main-search" placeholder="Search in the ads..." aria-label="" aria-describedby="basic-addon1">
+          </div>
+          <div class="my-3 d-block d-md-none">
+            <button type="button" class="btn modal-btn red-btn mr-1" data-toggle="modal" data-target="#filter"><i class="fas fa-filter mr-2"></i>Filtering</button>
+            <div class="modal fade bd-example-modal-lg" id="filter" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+              <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Filters</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body p-4 h-100">
+                    <div class="py-2 px-0 left-nav w-100">
+                      <a class="filtering-btn" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        <span class="mx-1">Price</span><img src="Images/dropdown.png" width="20" height="20" class="float-right mx-2 my-1">
+                      </a>
+                      <div class="collapse" id="collapseExample">
+                        <div class="card-body pl-3 pt-2">
+                          <form>
+                            <div class="form-row">
+                              <div class="col form-inline">
+                                <label for="from">From </label>
+                                <input type="text" id="from" name="example" class="form-control ml-auto" placeholder="Like $10" list="from-mon">
+                                <datalist id="from-mon">
+                                  <option value="$1">
+                                  <option value="$5">
+                                  <option value="$10">
+                                  <option value="$50">
+                                  <option value="$100">
+                                </datalist>
+                              </div>
+                            </div>
+                            <div class="form-row mt-3">
+                              <div class="col form-inline">
+                                <label for="from">To </label>
+                                <input type="text" id="from" name="example" class="form-control ml-auto" placeholder="Like $10" list="to-mon">
+                                <datalist id="to-mon">
+                                  <option value="$1">
+                                  <option value="$5">
+                                  <option value="$10">
+                                  <option value="$50">
+                                  <option value="$100">
+                                </datalist>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="custom-control custom-switch py-2 left-nav w-100">
+                      <input type="checkbox" class="custom-control-input" id="customSwitch2">
+                      <label class="custom-control-label" for="customSwitch2">Image only</label>
+                    </div>
+                    <div class="custom-control custom-switch py-2 left-nav w-100">
+                      <input type="checkbox" class="custom-control-input" id="customSwitch3">
+                      <label class="custom-control-label" for="customSwitch3">Instants only</label>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <button type="button" class="w-100 mx-auto d-block mt-3 ad-btn btn" name="button">Filter</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button type="button" class="btn modal-btn red-btn mr-1" data-toggle="modal" data-target="#categories"><i class="fa fa-bars mr-2" aria-hidden="true"></i>Categories</button>
+            <div class="modal fade bd-example-modal-lg" id="categories" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+              <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Categories</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body p-0 h-100">
+                    <div class="w-100">
+                      <p class="publish-ad-elem px-0 m-0 pl-3"><img src="Images/ps4.png" width="25" height="25" alt="">PS4</p>
+                      <p class="publish-ad-elem px-0 m-0 pl-3"><img src="Images/ps3.png" width="25" height="25" alt="">PS3</p>
+                      <p class="publish-ad-elem px-0 m-0 pl-3"><img src="Images/ps2.png" width="25" height="25" alt="">PS2</p>
+                      <p class="publish-ad-elem px-0 m-0 pl-3"><img src="Images/xbox-one.png" width="25" height="25" alt="">Xbox One</p>
+                      <p class="publish-ad-elem px-0 m-0 pl-3"><img src="Images/xbox-360.png" width="25" height="25" alt="">Xbox 360</p>
+                      <p class="publish-ad-elem px-0 m-0 pl-3"><img src="Images/switch.png" width="25" height="25" alt="">Nintendo Switch</p>
+                      <p class="publish-ad-elem-last px-0 m-0 pl-3"><img src="Images/wii.png" width="25" height="25" alt="">Nintendo Wii</p>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="main-body d-flex flex-row flex-wrap">
+              <a href="ad.html" class="ad">
+                <div class="">
+                  <span class="ad-name p-2">PS4 Slim 1tb</span>
+                  <span class="ad-price p-2">$250</span>
+                  <img src="Images/ps4-slim.jpeg" height="120" width="120" alt="">
+                </div>
+              </a>
+              <a href="ad.html" class="ad">
+                <div class="">
+                  <span class="ad-name p-2">The last of us</span>
+                  <span class="ad-price p-2">$50</span>
+                  <img src="Images/sample1.jpg" height="120" width="120" alt="">
+                </div>
+              </a>
+              <a href="ad.html" class="ad">
+                <div class="">
+                  <span class="ad-name p-2">Sekiro</span>
+                  <span class="ad-price p-2">$60</span>
+                  <img src="Images/sample2.jpg" height="120" width="120" alt="">
+                </div>
+              </a>
+              <a href="ad.html" class="ad">
+                <div class="">
+                  <span class="ad-name p-2">Rainbow Six Siege</span>
+                  <span class="ad-price p-2">$40</span>
+                  <img src="Images/sample3.jpg" height="120" width="120" alt="">
+                </div>
+              </a>
+              <a href="ad.html" class="ad">
+                <div class="">
+                  <span class="ad-name p-2">Fortnite</span>
+                  <span class="ad-price p-2">$20</span>
+                  <img src="Images/sample4.jpg" height="120" width="120" alt="">
+                </div>
+              </a>
+              <a href="ad.html" class="ad">
+                <div class="">
+                  <span class="ad-name p-2">Apex Legends</span>
+                  <span class="ad-price p-2">$30</span>
+                  <img src="Images/sample5.jpg" height="120" width="120" alt="">
+                </div>
+              </a>
+              <a href="ad.html" class="ad">
+                <div class="">
+                  <span class="ad-name p-2">Batman Arkham Knight</span>
+                  <span class="ad-price p-2">$60</span>
+                  <img src="Images/sample6.jpg" height="120" width="120" alt="">
+                </div>
+              </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
   </body>
 </html>
